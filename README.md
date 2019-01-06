@@ -6,4 +6,6 @@ Content:
 3. Tuples
 4. Generics
 6. Closure
-7. 
+7. Method
+8. Delegate
+9.
