@@ -8,4 +8,5 @@ Content:
 6. Closure
 7. Method
 8. Delegate
-9.
+9. Defer
+10. 
