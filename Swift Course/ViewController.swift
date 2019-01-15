@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         // flat Array
         flatArray()
         
+        //Zip Array
+        makeZipArray()
+        
         //Tuples
         tuplesTypesWithFunc()
        
@@ -54,6 +57,11 @@ class ViewController: UIViewController {
     //MARK: Zip Array
     func makeZipArray(){
         
+        let array1 = ["senthil","kumar","Ravi"]
+        let array2 = [10,20,30]
+        
+        let combinedArr = Array(zip(array1, array2))
+        print(combinedArr)
     }
     
     
