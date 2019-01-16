@@ -8,5 +8,5 @@ Content:
 6. Closure
 7. Method
 8. Delegate
-9. Defer
-10. 
+9. Access Control
+10. Defaults
