@@ -26,6 +26,12 @@ class ViewController: UIViewController {
         
         //Tuples
         tuplesTypesWithFunc()
+        
+        //Closure
+        MakeClosure()
+        
+        // Escaping Closure
+        closureCall()
        
     }
     
@@ -81,7 +87,41 @@ class ViewController: UIViewController {
         print(y.1)
         
     }
+    
+    
+    //MARK: Closure
+    func MakeClosure() {
+        
+        let sayHello = {(name:String) ->String in
+            return "Hello \(name)"
+        }
+        
+        print(sayHello("Closure"))
+        
+    }
+    
+    // Escaping Closure
+    var completionHandler:((Int)-> Void)?
+    func escapingClosureWithOperation(arr:[Int],handler:@escaping ((Int)->Void)){
+        
+        
+        var sum:Int = 0
+        
+        for value in arr {
+            sum += value
+        }
+        handler(sum)
+        
+        self.completionHandler = handler
+    }
 
 
+    func closureCall(){
+        
+        escapingClosureWithOperation(arr: [10,20,30,40,50]) {
+           (sum) in
+            print(sum)
+        }
+    }
 }
 
