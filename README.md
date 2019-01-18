@@ -7,6 +7,7 @@ Chapter 1
 2. Collection Types
 
 Chapter 2
+
 3. Tuples
 4. Generics
 6. Closure
